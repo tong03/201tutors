@@ -1,0 +1,55 @@
+.navbar {
+  border-bottom: 1px solid gray;
+}
+
+#homelink {
+  position: relative;
+  top: 5px;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Inter;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 15px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 34px;
+  font-size: 20pt;
+}
+
+button {
+  background-color: #181818;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+}

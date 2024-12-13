@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.login-page-container {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.login-page {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.login-left {
+  width: 30%;
+  margin-right: 5%;
+  justify-content: center;
+  position: fixed;
+  left: 15%;
+  
+  padding: 1rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-left .login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-left .login-form .login-form-title{
+  font-size: 250%;
+}
+
+.login-control {
+	align-self: center;
+}
+
+.login-control .sign-in-btn {
+	padding: 12px 150px;
+}
+
+.login-right {
+  width: 30%;
+  margin-right: 5%;
+  justify-content: center;
+  position: fixed;
+  left: 55%;
+  
+  padding: 1rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-right .register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-right .register-form-title{
+  font-size: 250%;
+}
+
+.register-control {
+	align-self: center;
+}
+
+.register-control .register-btn {
+	padding: 12px 100px;
+}

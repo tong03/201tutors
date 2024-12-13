@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-page-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.profile-page {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.profile-right {
+  width: 100%;
+  margin-right: 6%;
+  margin-left: 6%;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.profile-right .profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 16rem;
+}
+
+.display-container {
+  box-sizing: border-box;
+  flex: 1;
+
+  display: flex;
+  gap: 10px 16rem;
+  overflow: auto;
+}
+
+.course-display {
+  box-sizing: border-box;
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeInputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.courseInputDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.inputDiv label,
+.courseInputDiv label,
+.timeInputDiv label {
+  font-size: 1.5rem;
+}
+
+.inputDiv input,
+.inputDiv select {
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.input-headers {
+  display: flex;
+  gap: 50px;
+}
+
+.courseSelect {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.course-display {
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+.course-display ul {
+  list-style-type: none;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  gap: 10px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.course-display .course-item {
+  box-sizing: border-box;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5%;
+
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.course-display .course-name {
+  padding: 5px 5px;
+}
+
+.course-display .course-remove {
+  padding: 5px 5px;
+  border-radius: 0 10px 10px 0;
+
+  color: black;
+  background-color: lightgray;
+  font-weight: bold;
+}
+
+.course-display .course-remove:hover {
+  opacity: 0.5;
+}
+
+.addTimeBtn:disabled,
+.addCourseBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.time-display {
+  box-sizing: border-box;
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+}
+
+.time-table {
+  width: 100%;
+  height: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.time-table tr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.time-table thead tr {
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+.time-table thead th {
+  border: 1px solid black;
+}
+
+.time-table tbody td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.endTimeControls {
+  display: flex;
+}
+
+.endTime {
+  width: 80%;
+}
+
+.endTimeRemove {
+  width: 20%;
+  background-color: rgba(25, 25, 25, 0.9);
+  color: white;
+  cursor: pointer;
+}
+
+.endTimeRemove:hover {
+  background-color: rgba(25, 25, 25, 0.4);
+}
+
+.timeInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeInput div {
+  align-self: center;
+  border: 2px solid black;
+  width: 50px;
+}
+
+.timeInput input {
+  padding: 5px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.input-headers .weekdays {
+  padding: 5px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  width: 54%;
+}
+
+.profile-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-btn {
+  background-color: red;
+  margin-left: 5%;
+}
+
+.confirm-btn {
+  background-color: green;
+  margin-right: 5%;
+}
+
+/* Hover Effects */
+.cancel-btn:hover,
+.confirm-btn:hover {
+  opacity: 0.5;
+}
